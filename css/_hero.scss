@@ -1,0 +1,54 @@
+// hero css start
+.hero{
+    width: 100%;
+    height: 100vh;
+ position: relative;
+    background: url(../images/banner-bg.png) no-repeat right top;
+ min-height: 720px;
+
+ &_content{
+     h1{
+         font-size: 3.5rem;
+         margin-bottom: 1rem;
+       span{
+        color: $navHoverColor
+       }
+     }
+     p{
+         color: $navColor;
+         font-size: 1.25rem;
+         line-height: 1.8rem;
+     }
+     .hero-btn{
+         
+         margin-top: 1.5rem;
+         background-color: $navHoverColor;
+        @extend .btn_info;
+         }
+ }
+}
+
+@media(max-width:991.98px){
+    .hero{
+        &::after{
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0;
+            right: 0;
+bottom: 0;
+            background: rgba($color: #000000, $alpha: 0.7);
+      
+        }
+        &_content{
+            position: relative;
+            color: #fff;
+            // margin-top: 10rem!important;
+       z-index: 1;
+       p{
+           color: #fff;
+       }
+        }
+    }
+}
+// hero css end

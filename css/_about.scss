@@ -1,0 +1,27 @@
+.about{
+    padding: 6.25rem 0;
+
+    &_content{
+        padding: 2rem 1rem;
+        p{
+color:$navColor;
+        }
+        .about_btn{
+            margin-top: 2rem;
+            background-color: $btnHover;
+            transition: 0.3s ease-in-out;
+            @extend .btn_info;
+            &:hover{
+                opacity: 0.7;
+            }
+        }
+    }
+}
+
+@media(max-width:991.98px){
+    .about{
+        &_content{
+            padding: 1rem 0rem!important;
+        }
+    }
+}

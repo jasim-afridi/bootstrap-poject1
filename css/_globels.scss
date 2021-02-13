@@ -1,0 +1,40 @@
+@font-face{
+    font-family: Josefin;
+    src: url(../font/JosefinSans-Regular.ttf);
+}
+html{
+   scroll-behavior: smooth;  
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    font-family: Josefin;
+    background:  #ffffff;
+   
+    line-height: 1.4;
+    font-size: 1rem;
+}
+$logoColor:#191a20;
+$navColor: #7a7a7a;
+$navHoverColor:#fba70b;
+$btnHover:#f58650;
+
+ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+a{
+    text-decoration: none;
+    &:hover{
+        text-decoration: none;
+    }
+}
+p{
+    line-height: 25px;
+}
